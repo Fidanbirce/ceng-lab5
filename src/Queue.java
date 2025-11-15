@@ -2,10 +2,13 @@ public class Queue {
     Node front, rear;
     int size;
 
+
     public Queue() {
         front = rear = null;
         size = 0;
     }
+
+
 
     public void enqueue(int data) {
         Node newNode = new Node(data);
@@ -17,6 +20,7 @@ public class Queue {
         }
         size++;
     }
+
 
 
     public int dequeue() {
@@ -35,7 +39,9 @@ public class Queue {
         return value;
     }
 
-        public static boolean areEqual(Queue q1, Queue q2) {
+
+
+    public static boolean areEqual(Queue q1, Queue q2) {
             if (q1.size != q2.size)
                 return false;
 
@@ -50,6 +56,9 @@ public class Queue {
             }
             return true;
         }
+
+
+
     public void display() {
         Node current = front;
         while (current != null) {
