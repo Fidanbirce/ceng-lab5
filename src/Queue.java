@@ -58,7 +58,6 @@ public class Queue {
         }
 
 
-
     public void display() {
         Node current = front;
         while (current != null) {
